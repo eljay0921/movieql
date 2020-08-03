@@ -1,0 +1,23 @@
+{
+  "name": "movieql",
+  "version": "1.0.0",
+  "description": "movie api with graphql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eljay0921/movieql.git"
+  },
+  "author": "eljay0921",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eljay0921/movieql/issues"
+  },
+  "homepage": "https://github.com/eljay0921/movieql#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
+}
