@@ -9,3 +9,7 @@ type Query {
   movie(id: Int!): Movie
   delete(id: Int!): Boolean
 }
+
+type Mutation {
+  addMovie(name: String!, score: Int!): Movie
+}
