@@ -1,13 +1,14 @@
-import { people, getById } from "./db";
+import { getById, deleteMovie, getMovies } from "./db";
 
 const resolvers = {
   Query: {
-    people: () => people,
-    person: (_, args, context, info) => {
-      // console.log(args);
-      // console.log(context);
-      // console.log(info);
+    movies: () => getMovies(),
+    // (parent, args, context, info)
+    movie: (_, args) => {
       return getById(args.id);
+    },
+    delete: (_, args) => {
+      return deleteMovie(args.id);
     },
   },
 };
