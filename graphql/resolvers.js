@@ -7,13 +7,13 @@ const resolvers = {
     movie: (_, args) => {
       return getById(args.id);
     },
-    delete: (_, args) => {
-      return deleteMovie(args.id);
-    },
   },
   Mutation: {
     addMovie: (_, args) => {
       return addMovie(args.name, args.score);
+    },
+    delMovie: (_, { id }) => {
+      return deleteMovie(id);
     },
   },
 };
